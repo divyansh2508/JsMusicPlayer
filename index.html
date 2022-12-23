@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divyansh Player</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="assests/materialize/css/materialize.min.css">
+    <link rel="stylesheet" href="assests/style.css">
+    <!-- icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <div class="c-upper">
+        <ul class="collapsible popout lolapil">
+        </ul>
+    </div >
+    <div class="c-lower">
+      <div class="lower-artist-background-image" ></div>
+      <div class="row">
+        <div class="col s12">
+          <div class="carousel c-carousel-css">
+          </div>
+        </div>
+      </div>
+      <div class="row c-control-css">
+        <div class="col s12">
+          <div class="row">
+            <div class="col s2">
+              <img src="./assests/songs/heartless.jpg" onclick="toggleLowerShow()" alt="" class="current-playing-image">
+            </div>
+            <div class="col s7">
+              <!-- this holds songname and slider -->
+              <div class="song-info" onclick="toggleLowerShow()"><b>Heartless | The Weeknd</b></div>
+              <input type="range" name="" id="" >
+            </div>
+            <div class="col s3">
+              <!-- play/pause button -->
+              <a class="btn-floating btn-large waves-effect waves-light red" onclick="togglePause()"><i class="material-icons toggle-play-pause">play_arrow</i></a>
+              <!-- <div class="play-pause"></div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./assests/materialize/js/materialize.min.js"></script>
+    <script src="./assests/script.js"></script>
+</body>
+</html>
